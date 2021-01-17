@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head><title>Shoot Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+<style>
+    .jumbotron{
+  background-image: url("img/pexels-jeremy-bishop-2397414.jpg"); /* The image used */
+  background-color: #cccccc; /* Used if the image is unavailable */
+  background-position: center; /* Center the image */
+  background-repeat: repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  width:100%;
+  display: flex;
+      
+    }
+
+    .rules p, h3{
+        font-size: 3em;
+    }
+    h3{
+        font-size: 3em;
+        color:white;
+    }
+</style>
+
+</head>
+<body >
+    <div class="jumbotron ">
+       
+        <div class="row">
+        <div class = "col-sm-6">
+        <img src="img/camo-soldier-transparent-background-2.png" style ="width:80%" alt="">
+         </div>
+        <div class="col-sm-6 mt-5 p-4 rules  text-warning text-center" >
+            <h3><u>RULE</u></h3>
+            <p>You must overcome all obstacle on mission to save a life
+            within a time frame    
+            </p>
+            <button class = "btn btn-success text-white start"><a class ="text-white" href="shootGame.html">Start Game</a></button>
+        </div>
+
+        <audio class ="victory-song" src="img/victory.mp3"></audio>
+        <button class = "play btn btn-info">Play Background Song</button>
+    </div>
+    </div>
+    <script >
+        var victorySong = document.querySelector('.victory-song');
+        var play = document.querySelector('.play');
+        play.addEventListener('click', function(){
+            victorySong.play();
+            // alert("Who");
+        });    
+        
+        
+           
+      
+           
+       
+    </script>
+</body>
+</html>
